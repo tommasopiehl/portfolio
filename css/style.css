@@ -181,24 +181,23 @@ header .container {
   align-items: center;
 }
 
-li a {font-family: var(--font-secondary); text-decoration : none; color : white;}
-
-li a {text-decoration : none; color : white;}
-
+li a {font-family: var(--font-primary); 
+  text-decoration : none; 
+  color : black;
+  font-style: italic;
+  font-size: 1rem;}
 
 nav {
   position: absolute;
   top: 1rem;
   left: 0.4rem;
-  background: black;
-  width: 20%;
+  background: transparent;
+  /* width: 20%; */
   transition: all 0.3s ease;
 }
 
 span {
-  background : #2d2f31; 
-  color : white;
-  font-size : 1.2em;
+  color : black;
   font-variant : small-caps;
   cursor : pointer;
   display: block;
@@ -218,7 +217,7 @@ span::after {
   transition: all 0.3s ease;
 }
 
-.slide li {margin-top: 15%;margin-bottom: 15%;}
+.slide li {margin-top: 30%;margin-bottom: 30%;}
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
 
