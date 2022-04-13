@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+    <script src="https://kit.fontawesome.com/d2754cc67b.js" crossorigin="anonymous"></script>
+    <script script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    $(".rotate").click(function () {
+    $(this).toggleClass("down");
+})
+    </script>
     <title>TommasosKonst</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +27,7 @@
     <header>
         <div class="menu">
           
-          <nav>
+          <!-- <nav>
 
             <label for="touch"><img id="drop" src="images/portstuff/menubarswhite.PNG"></label>               
             <input type="checkbox" id="touch"> 
@@ -30,36 +39,33 @@
               <li><a href="#about">About</a></li>
             </ul>
           
-          </nav> 
+          </nav>  -->
           <div class="tom">
           <h1>TOMMASO PIEHL</h1>
+          </div>
         </div>
-        <!-- <div class="socials">
-          <a
-            class="contact_btn"
-            href="https://twitter.com/nftmaso"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img src="images/content/twitterred.PNG" alt="Twitter" id="headlogo" />
-          </a>
-          <a
-            class="contact_btn"
-            href="https://www.instagram.com/tommasopiehl/?hl=ur"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img src="images/content/instared.PNG" alt="Twitter" id="headlogo" />
-          </a>
-        </div> -->
+        <div class="linklist">
+        <a class="headlink" href="#favourites" style="text-decoration: none;
+        color: black;">MY ART</a>
+        <p>/</p>
+        <a class="headlink"  href="#nft:s" style="text-decoration: none;
+        color: black;">NFT</a>
+        <p>/</p>
+        <a class="headlink"  href="#clothing" style="text-decoration: none;
+        color: black;">CLOTHING</a>
+        <p>/</p>
+        <a class="headlink"  href="#about" style="text-decoration: none;
+        color: black;">ABOUT</a>
         </div>
-        <!-- <div class="line">
-        </div> -->
+        <div class="line">
+        </div>
     </header>
 
     <section class="top"> 
     <img id="topbanner" src="images/portstuff/topbanner.PNG">
     </section>
 
-    <section class="series">
+    <!-- <section class="series">
     <h1>PORTFOLIO</h1>
     <div class="row">
     <div class="linkdiv">
@@ -87,12 +93,14 @@
     </a>
   </div>
   </div>
-    </section>
+    </section> -->
 
+    <nav>
+    <label class="cap" for="touch"><div id="cap">MY ART</div></label>               
+    <input type="checkbox" id="touch"> 
+    <ul class="slide">
     <section class="display" id="favourites">
-    <h1>MY ART</h1>
-    <div class="line">
-    </div>
+    <!-- <h1>MY ART</h1> -->
     <div class="row">
     <img id="feed" src="images/portstuff/bully.PNG">
     <img id="feed" src="images/portstuff/beach.PNG">
@@ -114,17 +122,14 @@
     <img id="feed" src="images/portstuff/fuckyface.PNG">
     </div>
     </section>
+  </ul>
+  </nav>
 
-    <div class="caption" id="nft:s">
-      <h1>NFT</h1>
-    </div>
-    
-    <section class="bannerhi">
-    <div class="comingsoon">
-      <img src="images/content/comingsoon.PNG" id="comingsoon" />
-    </div>
-  </section>
 
+  <nav>
+    <label class="cap" for="touchB"><div id="cap">NFT</div></label>               
+    <input type="checkbox" id="touchB"> 
+    <ul class="slideB">
     <section class="lazylabels">
       <div class="linkrow">
     <a
@@ -174,12 +179,6 @@
   </div>
     </section>
 
-    <section class="bannerlow">
-      <div class="comingsoon">
-        <img src="images/content/comingsoon.PNG" id="comingsoon" />
-      </div>
-    </section>
-
 
       <section class="lego">
         <div class="row">
@@ -187,15 +186,15 @@
         <div class="slideshow-container-lego">
           <!-- Full-width images with number and caption text -->
           <div class="mySlidesLego fade">
-            <img src="images/content/tracksuit.PNG" style="width:100%">
+            <img src="images/content/tracksuit.PNG" style="width:80%">
             <!-- <div class="text">Caption Text</div> -->
           </div>
           <div class="mySlidesLego fade">
-            <img src="images/content/guard.PNG" style="width:100%">
+            <img src="images/content/guard.PNG" style="width:80%">
             <!-- <div class="text">Caption Two</div> -->
           </div>
           <div class="mySlidesLego fade">
-            <img src="images/content/turtle.PNG" style="width:100%"/>
+            <img src="images/content/turtle.PNG" style="width:80%"/>
             <!-- <div class="text">Caption Three</div> -->
           </div>
           <!-- Next and previous buttons -->
@@ -210,13 +209,14 @@
           In order to avoid legal tribulations the FuegoBlocks were unfortunately never released. 
           Regardless of this im very happy with the design.
         </p>
-        
       </section>
-
-      <div class="caption" id="clothing">
-        <h1>CLOTHING</h1>
-      </div>
-
+    </ul>
+  </nav>
+    
+  <nav>
+    <label class="cap" for="touchC"><div id="cap">CLOTHING</div></label>               
+    <input type="checkbox" id="touchC"> 
+    <ul class="slideC">
       <section class="clothing">
       <h2>These are some shirts which were part of a project which i
         posted on everpress. Im currently only designing apparel for 
@@ -249,14 +249,6 @@
       </div>
       <br>
       <a
-      id="turbolink"
-      class="clothinglink"
-      href="https://www.willshop.se/shop/turbobulk"
-      target="_blank"
-      rel="noopener noreferrer">
-    <img src="images/portstuff/turbobulk.PNG" id="lazy" />
-    </a>
-    <a
       id="clothinglink"
       class="clothinglink"
       href="https://www.instagram.com/tommasopiehl/?hl=ur"
@@ -264,13 +256,24 @@
       rel="noopener noreferrer">
     <img src="images/portstuff/mulligan.PNG" id="lazy" />
     </a>
+      <a
+      id="turbolink"
+      class="clothinglink"
+      href="https://www.willshop.se/shop/turbobulk"
+      target="_blank"
+      rel="noopener noreferrer">
+    <img src="images/portstuff/turbobulk.PNG" id="lazy" />
+    </a>
       </div>
       </section>
+    </ul>
+  </nav>
 
-      <div class="caption" id="about">
-        <h1>ABOUT</h1>
-      </div>
 
+      <nav>
+        <label class="cap" for="touchD"><div id="cap">ABOUT</div></label>               
+        <input type="checkbox" id="touchD"> 
+        <ul class="slideD">
       <section class="about">
         <div class="row">
           <img src="images/portstuff/tommyface.PNG" id="tommyface" />
@@ -320,6 +323,8 @@
           </div>
           </div>
       </section>
+    </ul>
+  </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
     <script src="js/countdown.js"></script>
@@ -411,6 +416,7 @@
       slides[slideIndexShirt -1].style.display = "block";
       dots[slideIndexShirt -1].className += " active";
       }</script>
+
   </body>
 </html>
 

@@ -130,8 +130,6 @@ body {
 #turbolink{
   height: 100%;
   width: 30%;
-  margin-left: 3%;
-  margin-right: 3%;
 }
 
 #lazylinkcan{
@@ -147,14 +145,10 @@ body {
 
 #fuegotext{
   margin-right: -10%;
-  height: 80%;
+  height: 100%;
   width: 60%;
 }
 
-#trubo{
-  height: 100%;
-  width: 50%;
-}
 
 #tommyface{
   height: 100%;
@@ -181,26 +175,22 @@ header .container {
   align-items: center;
 }
 
-li a {font-family: var(--font-primary); 
-  text-decoration : none; 
-  color : black;
-  font-style: italic;
-  font-size: 1rem;}
+.cap{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  font-family: var(--font-secondary);
+  font-weight: lighter;
+  font-size: 2rem;
+  padding: 3%;
+}
 
 nav {
-  position: absolute;
-  top: 1rem;
-  left: 0.4rem;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
   background: transparent;
   /* width: 20%; */
   transition: all 0.3s ease;
-}
-
-span {
-  color : black;
-  font-variant : small-caps;
-  cursor : pointer;
-  display: block;
 }
 
 span::after {
@@ -217,11 +207,87 @@ span::after {
   transition: all 0.3s ease;
 }
 
-.slide li {margin-top: 30%;margin-bottom: 30%;}
+/* .slide li {margin-top: 30%;margin-bottom: 30%;} */
 
-#touch {position: absolute; opacity: 0; height: 0px;}    
+#touch {position: absolute; opacity: 0; height: 0px;}   
 
-#touch:checked + .slide {height: 300px;}
+#touch:checked + .slide {height: 100%;}
+
+.slideB {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* .slide li {margin-top: 30%;margin-bottom: 30%;} */
+
+#touchB {position: absolute; opacity: 0; height: 0px;}   
+
+#touchB:checked + .slideB {height: 100%;}
+
+.slideC {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* .slide li {margin-top: 30%;margin-bottom: 30%;} */
+
+#touchC {position: absolute; opacity: 0; height: 0px;}   
+
+#touchC:checked + .slideC {height: 100%;}
+
+.slideD {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* .slide li {margin-top: 30%;margin-bottom: 30%;} */
+
+#touchD {position: absolute; opacity: 0; height: 0px;}   
+
+#touchD:checked + .slideD {height: 100%;}
+
+.rotate {
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.rotate.down {
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+
+.linklist{
+  font-family: var(--font-secondary);
+  display: flex;
+  font-size: 1.3rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.headlink{
+  transition: all 0.3s ease;
+}
+
+.headlink:hover{
+  transform: scale(1.1);
+}
 
 .contact_btn{
   transition: all 0.3s ease;
@@ -245,11 +311,11 @@ span::after {
   font-style: italic;
   font-family: var(--font-primary);
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-header .line{
-  height: 3%;
+.line{
+  height: 5px;
   width: 100%;
   background-color: black;
 }
@@ -315,13 +381,10 @@ header .line{
   border: 1px solid white;
   padding: 10%; */
   text-decoration: none;
-  font-family: var(--font-primary);
-  -webkit-text-stroke: 1px white;
+  font-family: var(--font-secondary);
   font-weight: lighter;
-  font-style: italic;
   font-size: 200%;
   color: black;
-  margin-top: -25%;
 }
 
 .display{
@@ -341,7 +404,7 @@ header .line{
   font-family: var(--font-secondary);
   font-weight: lighter;
   font-size: 2rem;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .display .row{
@@ -380,6 +443,12 @@ header .line{
   width: 100%;
 }
 
+.bannerlego{
+  margin-top: 2%;
+  display: flex;
+  width: 100%;
+}
+
 .lazylabels{
   width: 100%;
   display: flex;
@@ -388,6 +457,7 @@ header .line{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5%;
 }
 
 .lazylabels .row{
@@ -408,7 +478,7 @@ header .line{
   text-align: justify;
   padding-right: 5%;
   padding-left: 5%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color:black;
   font-family: var(--font-secondary);
   font-weight: lighter;
@@ -431,10 +501,15 @@ header .line{
   flex-wrap: wrap;
   margin: auto;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-image: url("content/legowallred.PNG");
 }
+
+/* .line{
+  height: 10%;
+  width: 100%;
+  background-color: black;
+} */
 
 .lego .row{
   display: flex;
@@ -445,7 +520,6 @@ header .line{
 }
 
 .lego p{
-  text-align: justify;
   margin-top: -5%;
   padding:4%;
   font-size: 1.2rem;
@@ -456,6 +530,7 @@ header .line{
 }
 
 .clothing{
+margin-top: 10%;
 width: 100%;
 display: flex;
 flex-wrap: wrap;
@@ -493,7 +568,7 @@ margin-bottom: 2%;
 
 .clothing h2{
   padding:2%;
-  font-size: 100%;
+  font-size: 1.2rem;
   font-family: var(--font-secondary);
   text-align: center;
 }
@@ -538,6 +613,7 @@ margin-bottom: 2%;
   height: 100%;
   padding: 5%;
   width: 30%;
+  margin-right: 10%;
   text-decoration: none;
   align-items: center;
   display: flex;
@@ -548,6 +624,7 @@ margin-bottom: 2%;
   height: 100%;
   padding: 5%;
   width: 30%;
+  margin-left: 10%;
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -589,6 +666,7 @@ margin-bottom: 2%;
 
 .slideshow-container-lego {
   width: 50%;
+  margin-left: 5%;
   position: relative;
 }
 
@@ -621,8 +699,8 @@ margin-bottom: 2%;
   cursor: pointer;
   position: absolute;
   top: 50%;
-  margin-left: 20%;
-  width:25%;
+  margin-left: 15%;
+  width:40%;
   margin-top: -22px;
   color: black;
   font-weight: bold;
